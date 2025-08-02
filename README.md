@@ -53,7 +53,7 @@
 ```
 
 ### 前端技术
-```json
+```xml
 • React 18.3.1 - 现代化组件框架
 • React Router DOM 6.26.2 - 客户端路由管理
 • ESLint - 代码质量保障
