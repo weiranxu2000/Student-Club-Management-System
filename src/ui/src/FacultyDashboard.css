@@ -1,0 +1,60 @@
+.dashboard-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.funding-applications {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.funding-applications th, .funding-applications td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.funding-applications th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.funding-applications button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.expanded-details {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.expanded-details button {
+    margin-right: 10px;
+}
+
+/* You might want to add these styles for consistency with StudentDashboard */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add any additional styles you need */

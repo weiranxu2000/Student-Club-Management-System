@@ -1,0 +1,300 @@
+/* Management page main container */
+.management-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Search container, horizontally aligned using flexbox */
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute the buttons evenly */
+    align-items: center; /* vertical centering */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.add-event-btn, .manage-admins-btn, .apply-funding-btn, .modify-funding-btn{
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-event-btn:hover, .manage-admins-btn:hover, .apply-funding-btn:hover, .modify-funding-btn:hover {
+    background-color: #e6f2ff;
+}
+
+.edit-btn {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.save-btn, .close-btn, .delete-btn {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #c82333;
+    color: white;
+}
+
+/* Editing the active pop-up layer style */
+.edit-event-overlay, .add-event-overlay, .manage-admins-overlay, .apply-funding-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-event, .add-event, .manage-admins, .apply-funding {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+}
+
+.add-event input {
+    margin-bottom: 10px; /* Add a 10px bottom margin to each input box */
+    padding: 8px; /* Add some inner margins to the input box to enhance the user experience */
+    width: 100%; /* Adapt the width of the input box to the container */
+}
+
+.add-event button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 16px;
+}
+
+
+.close-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Back button style */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block; /* Preventing buttons from taking up an entire line */
+    width: auto; /* Set button width to adaptive content */
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 页面容器 */
+.management-wrapper {
+    position: relative; /* For positioning the Back button */
+}
+
+.scroll-container {
+    max-height: 600px;  /* max height */
+    overflow-y: auto;   /* vertical scrolling */
+}
+
+.apply-funding-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply-funding {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS */
+.apply-funding input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+.apply-funding button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 16px;
+}
+
+
+.save-btn, .close-btn {
+    margin: 10px 5px;
+}
+.manage-admins-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage-admins {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+.manage-admins input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.manage-admins button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.manage-admins table {
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.manage-admins table th, .manage-admins table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.close-btn {
+    background-color: grey;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.funding-list-overlay, .edit-funding-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.funding-list, .edit-funding {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.funding-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.funding-list th, .funding-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.funding-list th {
+    background-color: #f2f2f2;
+}
+
+.edit-funding input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.edit-funding button {
+    margin-right: 10px;
+}
+
+.edit-funding p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.edit-funding textarea,
+.edit-funding input[type="number"],
+.edit-funding input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.edit-funding textarea {
+    resize: vertical;
+}
